@@ -1,0 +1,16 @@
+[
+{
+  "modid": "telesleep",
+  "name": "TeleSleep",
+  "description": "A simple utility for modpack makers that teleports the player to coordinates in a certain dimension when the sleep in a bed.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://github.com/shadowfacts/TeleSleep",
+  "updateUrl": "",
+  "authorList": ["shadowfacts"],
+  "credits": "Tavinnea and DivineGaming for the idea for this mod.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
