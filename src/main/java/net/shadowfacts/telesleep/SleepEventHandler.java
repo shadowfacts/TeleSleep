@@ -1,5 +1,6 @@
 package net.shadowfacts.telesleep;
 
+import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.event.entity.player.PlayerSleepInBedEvent;
 
@@ -8,7 +9,7 @@ import net.minecraftforge.event.entity.player.PlayerSleepInBedEvent;
  */
 public class SleepEventHandler {
 
-	@SubscribeEvent
+	@SubscribeEvent(priority = EventPriority.HIGHEST)
 	public void onPlayerSleepInBed(PlayerSleepInBedEvent event) {
 		if (SleepLocations.instance.logBedCoords) {
 			System.out.println("Bed coordinates: " + getCoordsFromEvent(event).toString());
