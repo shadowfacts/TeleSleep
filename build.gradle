@@ -32,7 +32,7 @@ minecraft {
 	version = "$minecraft_version-$forge_version"
 	runDir = "run"
 
-	replaceIn "dimensionalsleep/DimensionalSleep.java"
+	replaceIn "telesleep/TeleSleep.java"
 	replace '@VERSION@', "$mod_version"
 }
 
