@@ -8,13 +8,12 @@ import net.minecraftforge.common.MinecraftForge;
 /**
  * @author shadowfacts
  */
-@Mod(modid = TeleSleep.modId, name = TeleSleep.displayName, version = TeleSleep.version, guiFactory = TeleSleep.guiFactory)
+@Mod(modid = TeleSleep.modId, name = TeleSleep.displayName, version = TeleSleep.version)
 public class TeleSleep {
 
 	public static final String modId = "telesleep";
 	public static final String displayName = "TeleSleep";
 	public static final String version = "@VERSION@";
-	public static final String guiFactory = "net.shadowfacts.telesleep.client.gui.TSGuiFactory";
 
 	@Mod.Instance(modId)
 	public static TeleSleep instance;
