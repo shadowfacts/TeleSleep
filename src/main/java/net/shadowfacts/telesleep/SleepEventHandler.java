@@ -2,6 +2,7 @@ package net.shadowfacts.telesleep;
 
 import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.event.entity.player.PlayerSleepInBedEvent;
 
 /**
@@ -20,6 +21,7 @@ public class SleepEventHandler {
 				event.entityPlayer.travelToDimension(newCoord.dim);
 			}
 			event.entityPlayer.setPositionAndUpdate(newCoord.x, newCoord.y, newCoord.z);
+			event.result = EntityPlayer.EnumStatus.OTHER_PROBLEM;
 		}
 	}
 

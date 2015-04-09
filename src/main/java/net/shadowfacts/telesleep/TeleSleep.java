@@ -3,6 +3,7 @@ package net.shadowfacts.telesleep;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 /**
@@ -26,6 +27,11 @@ public class TeleSleep {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 		MinecraftForge.EVENT_BUS.register(new SleepEventHandler());
+	}
+
+	@Mod.EventHandler
+	public void serverLoad(FMLServerStartingEvent event) {
+		event.registerServerCommand(CommandReloadTeleSleep.instance);
 	}
 
 }

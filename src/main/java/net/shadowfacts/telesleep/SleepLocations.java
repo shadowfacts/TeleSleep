@@ -21,10 +21,12 @@ public class SleepLocations {
 
 	private Map<String, String> coordinates = new HashMap<String, String>();
 
+	public static File f;
+
 	public static void load(FMLPreInitializationEvent event) {
 		try {
 
-			File f = new File(event.getModConfigurationDirectory().getAbsolutePath() + "/TeleSleep.json");
+			f = new File(event.getModConfigurationDirectory().getAbsolutePath() + "/TeleSleep.json");
 
 			if (!f.exists()) {
 				f.createNewFile();
